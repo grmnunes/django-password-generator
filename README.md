@@ -1,6 +1,3 @@
-<div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Password Generator" />
-
   &#xa0;
 
   <!-- <a href="https://passwordgenerator.netlify.app">Demo</a> -->
@@ -14,8 +11,6 @@
   <img alt="Github language count" src="https://img.shields.io/github/languages/count/grmnunes/django-password-generator?color=56BEB8">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/grmnunes/django-password-generator?color=56BEB8">
-
-  <img alt="License" src="https://img.shields.io/github/license/grmnunes/django-password-generator?color=56BEB8">
 
 </p>
 
