@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main class="container">
+        <header class="d-flex flex-column align-items-center justify-content-center mt-4">
+            <h3>Django Password Generator</h3>
+            <h5>Generate a password following the desired pattern without complications!</h5>
+        </header>
+        <hr>
+        <form action="{% url 'password' %}">
+            <select name="length" id="length" class="form-select" aria-label="Default select example">
+                <option selected>Number of characters...</option>
+                <option value="7" >7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <br>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" name="uppercase">
+                <label class="form-check-label" for="uppercase">Include uppercase characters</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" name="numbers">
+                <label class="form-check-label" for="numbers">Include numbers</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" name="special">
+                <label class="form-check-label" for="special">Include special characters</label>
+            </div>
+
+
+
+            <button type="submit" class="btn btn-outline-primary mt-4 center">Generate!</button>
+        </form>
+    </main>
+
+{% endblock content %}
